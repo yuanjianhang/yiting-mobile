@@ -44,20 +44,15 @@ header {
     background: #252534;
     height:45px;
 }
+header h1 {
+    line-height: 45px;
+    color:#FFF;
+    font-size:18px;
+    text-align: center;
+}
 .content-wrapper {
     position: relative;
-}
-.slide-hook {
-    position: absolute;
-    left:0;
-    top:0;
-    width: 100%;
-}
-.home-ctn, .ranking-ctn {
-    position: absolute;
-    width: 100%;
-    left:0;
-    top:0;
+    padding-bottom: 20px;
 }
 .channel {
     margin:10px;
@@ -68,7 +63,7 @@ header {
     height:80px;
     margin:8px 0;
 }
-.channel section h1 {
+.channel section h2 {
     font-weight: normal;
     font-size: 13px;
     width: 89px;
@@ -79,22 +74,22 @@ header {
     background-image:url("../images/feature-list.png");
     box-shadow: 1px 1px 1px #cdcdcd;
 }
-.channel section:nth-child(1) h1 {
+.channel section:nth-child(1) h2 {
     background-position: -1px 0; 
 }
-.channel section:nth-child(2) h1 {
+.channel section:nth-child(2) h2 {
     background-position: -118px 0;   
 }
-.channel section:nth-child(3) h1 {
+.channel section:nth-child(3) h2 {
     background-position: -233px 0;
 }
-.channel section:nth-child(4) h1 {
+.channel section:nth-child(4) h2 {
     background-position: -1px -103px; 
 }
-.channel section:nth-child(5) h1 {
+.channel section:nth-child(5) h2 {
     background-position: -118px -103px;
 }
-.channel section:nth-child(6) h1 {
+.channel section:nth-child(6) h2 {
     background-position: -234px -103px;
 }
 
@@ -132,10 +127,55 @@ header {
 }
 
 /* 歌曲排行类 */
-.ranking-ctn {
-    left:100%;
+.ranking-ctn article {
+    border-bottom: 1px solid #dadada;
+    padding: 5px 0;
 }
-.test {
-    height:100px;
-    background: #00F;
+.ranking-ctn article:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.ranking-ctn article section {
+    float: left;
+}
+.ranking-ctn article a {
+    float: right;
+    background: url("../images/download.png");
+    width:18px;
+    height:18px;
+    margin:20px 20px 0 10px;
+}
+.ranking-item-index {
+    font-size: 22px;
+    color:#999;
+    line-height: 58px;
+    margin:0 10px;
+}
+.ranking-ctn article section h3 {
+    font-size: 16px;
+    line-height: 36px;
+}
+.ranking-ctn article section p {
+    height: 20px;
+    line-height: 12px;
+    font-size: 12px;
+    color: #999;
+    font-weight: bold;
+}
+.ranking-item-status {
+    display: none;
+    margin: 22px 10px 0 0;
+    width:15px;
+    height:16px;
+}
+.ranking-item-status-play {
+    display: block;
+    background: url("../images/play.png") no-repeat;
+}
+.ranking-item-status-pause {
+    display: block;
+    background: url("../images/pause.png") no-repeat 1px 0;
 }
