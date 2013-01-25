@@ -29,6 +29,7 @@ ol, ul {
     list-style: none;
 }
 a, a:hover {
+    color:#333;
 	text-decoration: none;
 }
 
@@ -52,8 +53,74 @@ header h1 {
 }
 .content-wrapper {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+}
+footer section {
+    padding: 5px 10px;
+    line-height: 36px;
+    border: 1px solid #000;
+    background: #353543;
+    font-size: 15px;
+    color: #fff;
+}
+footer section:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+footer section aside, footer section article {
+    float: left;
+}
+footer section span {
+    float: right;
+}
+footer section aside {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+footer section article {
+    margin-left: 10px;
+}
+footer section article h4 {
+    font-size: 15px;
+    font-weight: normal;
+    float: left;
+}
+footer section article p {
+    float: left;
+    font-size: 12px;
+    margin-left: 5px;
+    color: #999;
+}
+.common-bg {
+    background-image: url("../images/common.png");
+    background-repeat: no-repeat;
+}
+.common-back {
+    float: left;
+    background-position: 0 -18px;
+    width:22px;
+    height:20px;
+    margin:12px 0 0 10px;
+}
+.common-search {
+    background-position: -22px -18px;
+    width: 20px;
+    height:22px;
+    float: right;
+    margin: 11px 10px 0 0;
+}
+/* 首页样式 */
 .channel {
     margin:10px;
 }
@@ -130,6 +197,7 @@ header h1 {
 .ranking-ctn article {
     border-bottom: 1px solid #dadada;
     padding: 5px 0;
+    background: #fafafa;
 }
 .ranking-ctn article:after {
     content: "\0020";
@@ -143,16 +211,19 @@ header h1 {
 }
 .ranking-ctn article a {
     float: right;
-    background: url("../images/download.png");
-    width:18px;
+    background-position: 0 0;
+    width:17px;
     height:18px;
     margin:20px 20px 0 10px;
 }
-.ranking-item-index {
+.ranking-item-index, .ranking-item-index-key {
     font-size: 22px;
     color:#999;
     line-height: 58px;
     margin:0 10px;
+}
+.ranking-item-index-key {
+    color:#C66;
 }
 .ranking-ctn article section h3 {
     font-size: 16px;
@@ -173,9 +244,20 @@ header h1 {
 }
 .ranking-item-status-play {
     display: block;
-    background: url("../images/play.png") no-repeat;
+    background-position: -33px 0;
 }
 .ranking-item-status-pause {
     display: block;
-    background: url("../images/pause.png") no-repeat 1px 0;
+    background-position: -17px 0;
+}
+.ranking-view-more {
+    display: block;
+    border-bottom: 1px solid #dadada;
+    padding: 10px 0;
+    background: #fafafa;
+    text-align: center;
+    font-size: 16px;
+}
+.ranking-ctn article:active, .ranking-view-more:active {
+    background: #e8e8e8;
 }
