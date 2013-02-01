@@ -105,6 +105,9 @@ footer section article p {
 .common-bg {
     background-image: url("../images/common-retina.png");
     background-repeat: no-repeat;
+    -webkit-background-size: 121px 350px;
+    -moz-background-size: 121px 350px;
+    -o-background-size: 121px 350px;
     background-size: 121px 350px;
 }
 .common-back {
@@ -171,6 +174,10 @@ footer section article p {
     line-height: 135px;
     text-align: center;
     background-image:url("../images/feature-list.png");
+    -webkit-background-size: 325px 186px;
+    -moz-background-size: 325px 186px;
+    -o-background-size: 325px 186px;
+    background-size: 325px 186px;
     box-shadow: 1px 1px 1px #cdcdcd;
 }
 .channel section:nth-child(1) h2 {
@@ -194,6 +201,10 @@ footer section article p {
 
 .channel section:nth-child(n) h2:active {
     background-image:url("../images/feature-list-active.png");
+    -webkit-background-size: 325px 186px;
+    -moz-background-size: 325px 186px;
+    -o-background-size: 325px 186px;
+    background-size: 325px 186px;
 }
 .channel section:nth-child(1) h2:active {
     background-position: -1px 0; 
@@ -651,6 +662,9 @@ footer section article p {
     height:15px;
     background-color: #FFF;
     background-position: -17px -54px;
+    -webkit-background-size: 161px 466px;
+    -moz-background-size: 161px 466px;
+    -o-background-size: 161px 466px;
     background-size: 161px 466px;
     border: 1px solid #D5D5D5;
     -moz-border-radius: 4px;
